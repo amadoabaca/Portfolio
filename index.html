@@ -3,40 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon-500.png" />
+    <!-- fontawesome -->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- styles -->
+    <link rel="stylesheet" href="css.css">
     <title>Amado Abaca</title>
 </head>
 <body>
-    <button onclick="dayNightToggle()"></button>
-    <div class="container vertical-center">
-        <div class="row space">
-            <img class="center col-10 col-sm-10 col-lg-5 col-md-5 spacing" src="assets/me.svg">
-            <div class="col-10 col-sm-10 col-lg-7 col-md-7 center spacing">
-                <h1>Hola, soy Amado</h1>
-                <p class="sub center">Entusiasta de la Tecnología, Técnico Informático y Front-end Developer.</p>
-                <div class="col-md-6 col-sm-7 center">
-                    <div class="row">
-                        <a target="blank" href="https://www.linkedin.com/in/amado-abaca-59845a1b4/" class="center">
-                            <img class="social" src="assets/social/linkedin.svg" alt="">
+    <header>
+        <div class="container nav-cont">
+            <nav class="navbar navbar-light ">
+                <a class="navbar-brand" href="#">
+                  <img class="float-left" src="assets/logo.svg" alt="" loading="lazy">
+                </a>
+                <ul class="nav justify-content-end offm">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" target="blank" href="https://drive.google.com/file/d/1lTJBcg5Lp72fFZoT2pXfCnpdWgyJEPjG/view?usp=sharing">Curriculum</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Contacto</a>
+                    </li>
+                  </ul>
+                  <!-- movile -->
+                    <div class= "justify-content-end offp onm menu">
+                        <a class=""  onclick="openNav()">
+                            <i class="fas fa-bars"></i>
                         </a>
-                        <a target="blank" href="https://www.instagram.com/amadeuss99/" class="center">
-                            <img class="social" src="assets/social/insta.svg" alt="">
+                    </div>
+              </nav>
+        </div>
+        
+    </header>
+
+    <div class="home-cont">
+        <div class="container">
+            <div class="row padding-150">
+                <div class="col-12 col-sm-6 col-lg-6 col-md-9 title">
+                    <h1 class="title-text">¡Hola!
+                        <br>
+                        <span>Soy Web Developer y</span>
+                        <br>
+                        <span>Técnico Informático</span>
+                    </h1>
+                    <p class="title-bajada">Mi nombre es Amado Abaca y soy un entusiasta de la tecnología. <br> Desarrollo sitios web y ofrezco soluciones informáticas. <br> Te interesa trabajar en algo juntos?</p>
+                    <div class="">
+                        <a href="#">
+                            <button type="button" class="btn btn-main mr-1" data-toggle="modal" data-target="#exampleModal">Charlemos</button>
                         </a>
-                        <a target="blank" href="https://github.com/amadoabaca" class="center">
-                            <img class="social" src="assets/social/git.svg" alt="">
+                        <a target="blank" href="https://drive.google.com/file/d/1lTJBcg5Lp72fFZoT2pXfCnpdWgyJEPjG/view?usp=sharing">
+                            <button type="button" class="btn btn-cv ml-1"><i class="far fa-file-alt mr-3"></i>Curriculum</button>
                         </a>
-                        <a target="blank" href="https://www.reddit.com/user/zepplin-" class="center">
-                            <img class="social" src="assets/social/reddit.svg" alt="">
-                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-6 col-md-3 img-title off">
+                    <img class="float-right" src="assets/home.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    <div class="portfolio">
+        <div class="container">
+            <div class="title-section">
+                <h3>Portfolio</h3>
+                <p>Algo de lo que estuve haciendo ultimamente. <br> Podés ver mas proyectos en mi <a target="blank" href="https://github.com/amadoabaca">GitHub! <i class="fab fa-github "></i></a></p>
+            </div>
+        <div class="row cards" id="portfolio">
+            <div class="card bg-dark text-white" >
+                <a class="text-white" href="404.html">
+                    <img src="assets/port/shop.png" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Pet Shop</h5>
+                  <p class="card-text">Tienda online</p>
+                </div>
+                </a>
+              </div>
+              <div class="card bg-dark text-white">
+                 <a class="text-white" href="404.html">
+                    <img src="assets/port/mag.png" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Revista</h5>
+                  <p class="card-text">Revista online con Wordpress</p>
+                </div>
+                </a>
+              </div>
+              <div class="card bg-dark text-white" >
+                <a class="text-white" target="blank" href="https://scriptinformatica.com/">
+                  <img src="assets/port/script.png" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Script</h5>
+                  <p class="card-text">Web servicios informáticos</p>
+                </div>
+                </a>
+              </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- about -->
+
+    <div class="about">
+        <div class="container" id="#about">
+            <div class="title-section">
+                <h3>Lo que hago</h3>
+            </div>
+            <div class="row cards-left">
+                <div class="card ">
+                    <div class="card-body">
+                    <img class="img img-tech" src="assets/about/technical.png" alt="Mantenimiento">
+                    <h5 class="card-title">Servicio Técnico</h5>
+                    <p class="card-text">Tengo experiencia en servicio técnico, mantenimiento y optimización de computadoras de escritorio y portátiles. Además de conocimientos en configuración de redes locales.</p>
+                    </div>
+                </div>
+    
+                <div class="card ">
+                    <div class="card-body">
+                    <img class="img img-dev" src="assets/about/code.png" alt="Programación"> 
+                    <h5 class="card-title">Desarrollo Web</h5>
+                    <p class="card-text">Desarrollo el front-end de sitios web responsives utilizando las tecnologías HTML, CSS y JavaScript, junto con Firebase como back-end as a service.</p>
+                    </div>
+                </div>
+    
+                <div class="card ">
+                    <div class="card-body">
+                    <img class="img img-ase" src="assets/about/paper.png" alt="Asesoría"> 
+                    <h5 class="card-title">Asesoramiento</h5>
+                    <p class="card-text">Ofrezco asesoría personalizada en informática a mis clientes, brindando buena atención, un servicio de calidad y soluciones rápidas y efectivas.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="index.js"></script>
+
+    <!-- contact modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-main">
+                <button type="button" class="close-mod" data-dismiss="modal" aria-label="Close">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="container">
+                <div class="modal-body">
+                    <div class="modal-img text-center">
+                        <img src="assets/mail.svg" alt="">
+                    </div>
+                    <form action="https://formspree.io/f/mnqgeolz" method="POST">
+                        <input type="text" name="name" placeholder="Nombre" required="required" class="form-control mb-2">
+                        <input type="email" name="email" placeholder="Email" required="required" class="form-control mb-2">
+                        <textarea name="message" rows="4" placeholder="Mensaje" required="required" class="form-control mb-3"></textarea>
+                        <button type="submit" class="btn btn-block">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- sidebar -->
+    <div id="mySidebar" class="sidebar">
+        <div class="sidebar-content">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+            <a target="blank" href="https://drive.google.com/file/d/1lTJBcg5Lp72fFZoT2pXfCnpdWgyJEPjG/view?usp=sharing" onclick="closeNav()">Curriculum</a>
+            <a data-toggle="modal" data-target="#exampleModal" onclick="closeNav()">Contacto</a>
+        </div>
+    </div>
+
+    <!-- Go top -->
+
+    <div class="go-top-container">
+        <a href="#">
+            <div class="go-top-button">
+                <i class="fas fa-chevron-up go-up"></i>
+            </div>
+        </a>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="footer-container">
+        <div class="container">
+            <div class="row container-1 d-flex align-items-center">
+                <div class="footer-contact d-flex align-items-center col-11 col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                    <button type="button" class="btn btn-contacto" data-toggle="modal" data-target="#exampleModal">Charlemos</button>
+                </div>
+                <div class="footer-social col-11 col-lg-6 col-xl-6 col-md-6 col-sm-12 justify-content-end">
+                    <ul class="">
+                        <li class="botonera ">
+                            <a target="blank" href="https://www.linkedin.com/in/amado-abaca-59845a1b4/"><i class="fab fa-linkedin foot-1"></i></a>
+                        </li>
+                        <li class="botonera ">
+                            <a target="blank" href="https://github.com/amadoabaca"><i class="fab fa-github foot-2"></i></a>
+                        </li>
+                        <li class="botonera ">
+                            <a target="blank" href="https://www.instagram.com/amadeuss99/?hl=es-la"><i class="fab fa-instagram foot-3"></i></a>
+                        </li>
+                        <li class="botonera ">
+                            <a target="blank" href="https://www.facebook.com/amado.abaca/"><i class="fab fa-facebook-f foot-4"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="copy d-flex justify-content-center">
+                <p>© 2020 Amado Abaca. </p>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

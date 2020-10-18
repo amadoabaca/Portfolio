@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon-500.png" />
+    <!-- fontawesome -->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- styles -->
+    <link rel="stylesheet" href="css.css">
+    <title>Amado Abaca</title>
+</head>
+<body>
+    <header>
+        <div class="container nav-cont">
+            <nav class="navbar navbar-light ">
+                <a class="navbar-brand" href="index.html">
+                  <img class="float-left" src="assets/logo.svg" alt="" loading="lazy">
+                </a>
+                <ul class="nav justify-content-end offm">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="index.html#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" target="blank" href="https://drive.google.com/file/d/1lTJBcg5Lp72fFZoT2pXfCnpdWgyJEPjG/view?usp=sharing">Curriculum</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Contacto</a>
+                    </li>
+                  </ul>
+                  <!-- movile -->
+                    <div class= "justify-content-end offp onm menu">
+                        <a class=""  onclick="openNav()">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+              </nav>
+        </div>
+        
+    </header>
+
+    <div class="working-container">
+        <div class="container center">
+
+            <div class="card ">
+                <div class="card-body">
+                    <img class="img" src="assets/work-in-progress.svg" alt="Not Found">
+                        <h3 class="card-title">Work In Progress...</h3>
+                        <p class="card-text">Ups! Parece que esta página esta aún en construcción. <br> Te recomendamos que vuelvas a la página principal.</p>
+                    <div class="working-btn">
+                        <a href="index.html">
+                            <button type="button" class="btn btn-main">Volver</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- contact modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-main">
+                <button type="button" class="close-mod" data-dismiss="modal" aria-label="Close">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="container">
+                <div class="modal-body">
+                    <div class="modal-img text-center">
+                        <img src="assets/mail.svg" alt="">
+                    </div>
+                    <form action="https://formspree.io/f/mnqgeolz" method="POST">
+                        <input type="text" name="name" placeholder="Nombre" required="required" class="form-control mb-2">
+                        <input type="email" name="email" placeholder="Email" required="required" class="form-control mb-2">
+                        <textarea name="message" rows="4" placeholder="Mensaje" required="required" class="form-control mb-3"></textarea>
+                        <button type="submit" class="btn btn-block">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- sidebar -->
+    <div id="mySidebar" class="sidebar">
+        <div class="sidebar-content">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html#portfolio" onclick="closeNav()">Portfolio</a>
+            <a target="blank" href="https://drive.google.com/file/d/1lTJBcg5Lp72fFZoT2pXfCnpdWgyJEPjG/view?usp=sharing" onclick="closeNav()">Curriculum</a>
+            <a data-toggle="modal" data-target="#exampleModal" onclick="closeNav()">Contacto</a>
+        </div>
+    </div>
+
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
