@@ -14,6 +14,7 @@ body{
     --text: #757575;
   }
 
+
 header{
     background: black;
     height: 100px;
@@ -243,6 +244,7 @@ button.close-mod {
 }
 .title-section a:hover{
     color: #1d1d1d;
+    text-decoration: underline #1d1d1d;
 }
 
 .portfolio .card-title{
