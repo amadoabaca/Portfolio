@@ -163,10 +163,10 @@
                     <div class="modal-img text-center">
                         <img src="assets/mail.svg" alt="">
                     </div>
-                    <form action="https://formspree.io/f/mnqgeolz" method="POST">
-                        <input type="text" name="name" placeholder="Nombre" required="required" class="form-control mb-2">
-                        <input type="email" name="email" placeholder="Email" required="required" class="form-control mb-2">
-                        <textarea name="message" rows="4" placeholder="Mensaje" required="required" class="form-control mb-3"></textarea>
+                    <form class="contact-form">
+                        <input type="text" name="name" placeholder="Nombre" required="required" class="name form-control mb-2">
+                        <input type="email" name="email" placeholder="Email" required="required" class="email form-control mb-2">
+                        <textarea name="message" rows="4" placeholder="Mensaje" required="required" class="message form-control mb-3"></textarea>
                         <button type="submit" class="btn btn-block">Enviar</button>
                     </form>
                 </div>
@@ -232,7 +232,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
