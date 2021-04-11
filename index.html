@@ -32,6 +32,9 @@
                       <a class="nav-link" target="blank" href="https://drive.google.com/file/d/116IMBN5p9ONZ6f3pHz_L2laefy9e7pfY/view?usp=sharing">Curriculum</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" target="blank" href="https://collectednotes.com/amado">Blog</a>
+                      </li>
+                    <li class="nav-item">
                       <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Contacto</a>
                     </li>
                   </ul>
@@ -91,7 +94,7 @@
                </a>
             </div>
             <div class="card bg-dark text-white" >
-                <a class="text-white" href="404.html">
+                <a class="text-white" target="blank" href="https://forrajeria-venado.web.app/">
                     <img src="assets/port/shop.png" class="card-img" alt="...">
                 <div class="card-img-overlay">
                   <h5 class="card-title">Pet Shop</h5>
@@ -163,11 +166,11 @@
                     <div class="modal-img text-center">
                         <img src="assets/mail.svg" alt="">
                     </div>
-                    <form action="https://formspree.io/f/mnqgeolz" method="POST">
-                        <input type="text" name="name" placeholder="Nombre" required="required" class="form-control mb-2">
-                        <input type="email" name="email" placeholder="Email" required="required" class="form-control mb-2">
-                        <textarea name="message" rows="4" placeholder="Mensaje" required="required" class="form-control mb-3"></textarea>
-                        <button type="submit" class="btn btn-block">Enviar</button>
+                    <form class="contact-form">
+                        <input type="text" name="name" placeholder="Nombre" required="required" class="name form-control mb-2">
+                        <input type="email" name="email" placeholder="Email" required="required" class="email form-control mb-2">
+                        <textarea name="message" rows="4" placeholder="Mensaje" required="required" class="message form-control mb-3"></textarea>
+                        <button id="btnSend" type="submit" class="btn btn-block">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -181,6 +184,7 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#portfolio" onclick="closeNav()">Portfolio</a>
             <a target="blank" href="https://drive.google.com/file/d/1lTJBcg5Lp72fFZoT2pXfCnpdWgyJEPjG/view?usp=sharing" onclick="closeNav()">Curriculum</a>
+            <a target="blank" href="https://collectednotes.com/amado" onclick="closeNav()">Blog</a>
             <a data-toggle="modal" data-target="#exampleModal" onclick="closeNav()">Contacto</a>
         </div>
     </div>
@@ -232,7 +236,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
